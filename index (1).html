@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Limon Hossen — Mathematics Undergraduate, AI & No-Code Builder</title>
+<meta name="description" content="Portfolio of Md. Limon Hossen: mathematics student, AI & no-code builder, community leader and tutor from Dhaka, Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#120f33;--bg2:#1b1747;--ink:#f4f1ff;--mute:#b9b3e0;--pink:#ff5d8f;--amber:#ffb547;--teal:#2dd4bf;--vio:#8b6cff;--wa:#25d366;
+--grad:linear-gradient(120deg,var(--pink),var(--amber),var(--teal),var(--vio));--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:76px;overflow-x:clip;max-width:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 'Plus Jakarta Sans',system-ui,sans-serif;overflow-x:clip;max-width:100%;position:relative}
+.hero>*,.grid>*,.contact>*,.stats>*{min-width:0}
+h1,h2,h3,p{overflow-wrap:anywhere}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;line-height:1.15}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;animation:drift 18s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:46vw;height:46vw;background:var(--vio);top:-10%;left:-8%}
+.aurora i:nth-child(2){width:38vw;height:38vw;background:var(--pink);top:30%;right:-10%;animation-delay:-6s}
+.aurora i:nth-child(3){width:34vw;height:34vw;background:var(--teal);bottom:-12%;left:25%;animation-delay:-12s;opacity:.3}
+@keyframes drift{to{transform:translate(8vw,6vh) scale(1.15)}}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--grad);z-index:60}
+nav{position:fixed;top:0;width:100%;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;backdrop-filter:blur(14px);background:rgba(18,15,51,.65)}
+.logo{font:800 22px 'Sora';background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px;font-weight:500}
+nav ul a{color:var(--mute);transition:color .2s}nav ul a:hover{color:var(--ink)}
+#menu{display:none;background:none;border:0;color:var(--ink);font-size:28px;cursor:pointer}
+section{padding:96px 5vw;max-width:1120px;margin:auto}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:120px}
+.hi{display:inline-block;padding:6px 16px;border-radius:99px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);font-size:14px;color:var(--amber);margin-bottom:18px}
+h1{font-size:clamp(40px,7vw,76px);font-weight:800}
+h1 span{background:var(--grad);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:250% 0}}
+.role{font:600 clamp(18px,2.6vw,26px) 'Sora';margin:18px 0 12px;min-height:1.6em;color:var(--teal)}
+.role b{border-right:3px solid var(--teal);padding-right:4px;animation:blink .8s step-end infinite}
+@keyframes blink{50%{border-color:transparent}}
+.lead{color:var(--mute);max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:13px 26px;border-radius:99px;font-weight:600;border:2px solid transparent;transition:transform .25s,box-shadow .25s;cursor:pointer}
+.btn:hover{transform:translateY(-4px) scale(1.03)}
+.b1{background:var(--grad);color:#120f33;box-shadow:0 10px 30px rgba(255,93,143,.35)}
+.b2{border-color:rgba(255,255,255,.3)}.b2:hover{border-color:var(--teal)}
+.b3{background:var(--wa);color:#06260f}
+.photo{position:relative;width:min(340px,80vw);aspect-ratio:1;margin:auto;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-16px)}}
+.photo:before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(var(--pink),var(--amber),var(--teal),var(--vio),var(--pink));animation:spin 8s linear infinite;filter:blur(2px)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo .frame{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:var(--bg2);border:6px solid var(--bg);display:grid;place-items:center}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo .ini{font:800 84px 'Sora';background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chip{position:absolute;padding:8px 14px;border-radius:14px;background:var(--bg2);border:1px solid rgba(255,255,255,.18);font-size:13px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:float 5s ease-in-out infinite}
+.c1{top:6%;right:-10%;color:var(--pink)}.c2{bottom:14%;left:-12%;color:var(--amber);animation-delay:-2s}.c3{bottom:-4%;right:8%;color:var(--teal);animation-delay:-3.5s}
+h2{font-size:clamp(30px,5vw,46px);font-weight:800;margin-bottom:12px}
+h2:after{content:"";display:block;width:70px;height:5px;border-radius:9px;background:var(--grad);margin-top:12px}
+.sub{color:var(--mute);margin-bottom:40px;max-width:620px}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:26px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px) rotate(-.6deg);border-color:var(--c,var(--vio));box-shadow:0 18px 40px -12px var(--c,var(--vio))}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card .ic{font-size:34px;display:block;margin-bottom:10px}
+.card h3{font-size:19px;margin-bottom:8px;color:var(--c,var(--ink))}
+.card p,.card li{color:var(--mute);font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:36px}
+.stat{text-align:center;padding:22px;border-radius:var(--r);background:var(--bg2);border:1px solid rgba(255,255,255,.1)}
+.stat b{display:block;font:800 40px 'Sora';background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--mute)}
+.tl{position:relative;padding-left:30px;border-left:3px solid;border-image:linear-gradient(var(--pink),var(--teal),var(--vio)) 1}
+.tl .card{margin-bottom:22px;position:relative}
+.tl .card:before{content:"";position:absolute;left:-42px;top:30px;width:18px;height:18px;border-radius:50%;background:var(--c);box-shadow:0 0 0 6px var(--bg),0 0 18px var(--c)}
+.date{font-size:13px;font-weight:600;color:var(--c);margin-bottom:4px}
+.card ul{padding-left:18px;margin-top:8px}
+.tag{display:inline-block;margin-top:12px;padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;background:rgba(45,212,191,.15);color:var(--teal)}
+.skill{margin-bottom:16px}.skill div{display:flex;justify-content:space-between;font-size:14px;font-weight:600;margin-bottom:6px}
+.track{height:10px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden}
+.fill{height:100%;width:0;border-radius:9px;background:var(--grad);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pills span{padding:8px 16px;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-size:14px;transition:.25s}
+.pills span:hover{background:var(--pink);color:#120f33;transform:scale(1.08) rotate(-3deg)}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.contact .card{text-align:center}.contact .card a{color:var(--c);font-weight:600;word-break:break-all}
+footer{text-align:center;padding:40px 5vw 100px;color:var(--mute);font-size:14px}
+.wafab{position:fixed;right:20px;bottom:20px;z-index:55;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;font-size:30px;box-shadow:0 8px 26px rgba(37,211,102,.55);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}100%{box-shadow:0 0 0 22px rgba(37,211,102,0)}}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:center;padding-top:110px}.lead{margin:auto}.btns{justify-content:center}.photo{order:-1;width:min(260px,70vw)}.c1{right:0}.c2{left:0}.c3{right:4%}
+#menu{display:block}nav ul{position:absolute;top:100%;left:0;width:100%;flex-direction:column;background:var(--bg2);padding:20px 5vw;gap:14px;display:none}nav ul.open{display:flex}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div id="bar"></div>
+<nav>
+<a href="#hero" class="logo">MLH</a>
+<button id="menu" aria-label="Open menu">☰</button>
+<ul id="links">
+<li><a href="#about">About</a></li><li><a href="#do">What I Do</a></li><li><a href="#experience">Experience</a></li><li><a href="#skillora">SKILLORA</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="hero" class="hero">
+<div>
+<span class="hi">👋 Welcome to my portfolio</span>
+<h1>Hi, I'm <span>Md. Limon Hossen</span></h1>
+<p class="role"><b id="typed"></b></p>
+<p class="lead">I learn by building: exploring AI, data and no-code tools, leading a campus community, and creating practical opportunities for students in Bangladesh.</p>
+<div class="btns">
+<a class="btn b1" href="#projects">View my work</a>
+<a class="btn b2" href="#skillora">Explore SKILLORA</a>
+<a class="btn b3" href="https://wa.me/8801317323222" target="_blank" rel="noopener">💬 WhatsApp me</a>
+</div>
+</div>
+<div class="photo">
+<div class="frame"><span class="ini">MLH</span><img src="photo.jpg" alt="Portrait of Md. Limon Hossen" onerror="this.remove()"></div>
+<span class="chip c1">🤖 AI &amp; No-Code</span><span class="chip c2">📊 Data Analytics</span><span class="chip c3">🎓 Mathematics</span>
+</div>
+</section>
+
+<section id="about">
+<h2 class="rv">Who I am</h2>
+<p class="sub rv">Mathematics student, community builder and teacher, based in Dhaka.</p>
+<div class="grid">
+<div class="card rv" style="--c:var(--pink)"><span class="ic">🧮</span><h3>Mathematics first</h3><p>I'm a B.Sc. Mathematics Honours student at Dhaka Central University. I enjoy analytical thinking, AI tools and solving problems with data.</p></div>
+<div class="card rv" style="--c:var(--amber)"><span class="ic">🤝</span><h3>Community lead</h3><p>As Campus Lead at LinkedIn Community Bangladesh, I connect students with professional opportunities and a culture of learning.</p></div>
+<div class="card rv" style="--c:var(--teal)"><span class="ic">🎓</span><h3>Teacher at heart</h3><p>I mentor students with simple, step-by-step explanations, and believe technology and education create lasting impact.</p></div>
+</div>
+<div class="stats">
+<div class="stat rv"><b data-n="3" data-s="+">0</b><span>Years of tutoring</span></div>
+<div class="stat rv"><b data-n="24000" data-s="+">0</b><span>LCB community members</span></div>
+<div class="stat rv"><b data-n="4" data-s="">0</b><span>Roles &amp; experiences</span></div>
+<div class="stat rv"><b data-n="3" data-s="">0</b><span>Languages spoken</span></div>
+</div>
+<div class="pills rv"><span>📍 Dhaka, Bangladesh</span><span>🗣️ Bangla (Native)</span><span>English (Intermediate)</span><span>Hindi/Urdu</span><span>💡 AI Tools</span><span>Data Analysis</span><span>Personal Development</span></div>
+</section>
+
+<section id="do">
+<h2 class="rv">What I do</h2>
+<p class="sub rv">Four areas where I build skills and create value.</p>
+<div class="grid">
+<div class="card rv" style="--c:var(--vio)"><span class="ic">🤖</span><h3>AI &amp; Digital Skills</h3><p>Using AI tools, prompt engineering and digital productivity to build efficient solutions and streamline workflows.</p></div>
+<div class="card rv" style="--c:var(--teal)"><span class="ic">📊</span><h3>Data &amp; Analytical Thinking</h3><p>Applying mathematical foundations and data analysis to find insights and solve problems step by step.</p></div>
+<div class="card rv" style="--c:var(--amber)"><span class="ic">👥</span><h3>Community &amp; Leadership</h3><p>Building networks, supporting professional growth and linking students to real-world opportunities.</p></div>
+<div class="card rv" style="--c:var(--pink)"><span class="ic">🎓</span><h3>Teaching &amp; Mentorship</h3><p>Making complex ideas simple and guiding learners with regular feedback and practice plans.</p></div>
+</div>
+</section>
+
+<section id="experience">
+<h2 class="rv">Experience</h2>
+<p class="sub rv">Hands-on work in data, community and teaching.</p>
+<div class="tl">
+<div class="card rv" style="--c:var(--teal)"><div class="date">June 2026 – Present</div><h3>Data Analytics Volunteer</h3><p>Dhaka College Data Analytics Club (DCDAC)</p><ul><li>Contributing to data analytics initiatives and collaborating with a team on community-driven projects.</li></ul></div>
+<div class="card rv" style="--c:var(--amber)"><div class="date">May 2026 – June 2026</div><h3>Data Analytics Intern</h3><p>CodeAlpha · Student ID: CA/DF1/76108</p><ul><li>Selected for the Data Analytics Internship at CodeAlpha, a software organization registered under MSME, India.</li><li>Worked on real-world datasets to draw meaningful insights.</li><li>Built a deeper understanding of data concepts through structured learning and practice.</li></ul></div>
+<div class="card rv" style="--c:var(--pink)"><div class="date">May 2026 – April 2027</div><h3>Campus Lead</h3><p>LinkedIn Community Bangladesh · Dhaka College</p><ul><li>Represent Dhaka College at LCB, Bangladesh's leading LinkedIn-based professional network.</li><li>Build professional connections and in-demand skills within the campus.</li><li>Promote career growth through events and professional development.</li></ul></div>
+<div class="card rv" style="--c:var(--vio)"><div class="date">Ongoing</div><h3>Private Tutor &amp; Academic Mentor</h3><p>Self-Employed</p><ul><li>Teach Mathematics, Physics, Chemistry, ICT and Biology to school and college students.</li><li>Design notes, MCQ sets and model tests for exam preparation.</li><li>Keep structured progress reports and give regular feedback.</li></ul></div>
+</div>
+</section>
+
+<section id="skillora">
+<h2 class="rv">SKILLORA spotlight</h2>
+<p class="sub rv">A Bangladesh-focused project that connects student skills with real-world opportunities.</p>
+<div class="grid">
+<div class="card rv" style="--c:var(--pink)"><span class="ic">🎯</span><h3>Problem</h3><p>Many students struggle to turn their skills into real opportunities and career paths.</p></div>
+<div class="card rv" style="--c:var(--amber)"><span class="ic">💡</span><h3>Vision</h3><p>A platform that links student skills with practical opportunities in Bangladesh's growing digital economy.</p></div>
+<div class="card rv" style="--c:var(--teal)"><span class="ic">🔨</span><h3>Building</h3><p>Mapping how skills, learning and opportunities can be connected, one step at a time.</p></div>
+<div class="card rv" style="--c:var(--vio)"><span class="ic">📚</span><h3>Learning</h3><p>Testing ideas, listening to user needs and refining the approach.</p></div>
+</div>
+<p class="sub rv" style="margin-top:28px"><b style="color:var(--amber)">Current stage:</b> building, testing, learning and improving. Early-stage validation.</p>
+</section>
+
+<section id="projects">
+<h2 class="rv">Projects</h2>
+<p class="sub rv">Work that shows how I learn and help others.</p>
+<div class="grid">
+<div class="card rv" style="--c:var(--amber)"><span class="ic">📝</span><h3>Student MCQ &amp; Model Test Creator</h3><p>Designed Mathematics and English Grammar MCQ sets and model tests for school and college students, with simple learning materials that improved exam preparation.</p><span class="tag">✓ Completed</span></div>
+<div class="card rv" style="--c:var(--vio)"><span class="ic">🤖</span><h3>AI &amp; Digital Skills Journey</h3><p>Self-driven exploration of AI tools, prompt engineering and digital productivity, applied to real problems and content creation.</p><span class="tag">→ Ongoing</span></div>
+<div class="card rv" style="--c:var(--teal)"><span class="ic">👥</span><h3>Campus Professional Network</h3><p>Peer teaching and academic support at Dhaka College, with community events that connect students to professional growth.</p><span class="tag">→ Ongoing</span></div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="rv">Skills &amp; expertise</h2>
+<p class="sub rv">What I use today, and what I'm actively learning.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card rv" style="--c:var(--pink)">
+<div class="skill"><div><span>AI Tools &amp; Prompt Engineering</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+<div class="skill"><div><span>No-Code Development</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+<div class="skill"><div><span>Data Analysis</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+<div class="skill"><div><span>Mathematics &amp; Teaching</span><span>90%</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+</div>
+<div class="card rv" style="--c:var(--teal)">
+<div class="skill"><div><span>Communication</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+<div class="skill"><div><span>MS Office &amp; Documentation</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+<div class="skill"><div><span>Online Research</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+<div class="skill"><div><span>Python (learning)</span><span>45%</span></div><div class="track"><div class="fill" data-w="45"></div></div></div>
+</div>
+</div>
+<div class="pills rv"><span>🤖 AI Tools</span><span>📊 Excel &amp; Data</span><span>🐍 Python</span><span>🔧 No-Code</span><span>⚡ Digital Productivity</span><span>💬 English Communication</span></div>
+</section>
+
+<section id="education">
+<h2 class="rv">Education</h2>
+<p class="sub rv">My academic path so far.</p>
+<div class="tl">
+<div class="card rv" style="--c:var(--vio)"><div class="date">Ongoing</div><h3>B.Sc. Mathematics Honours</h3><p>Dhaka Central University · Currently running</p></div>
+<div class="card rv" style="--c:var(--amber)"><div class="date">2023</div><h3>Higher Secondary Certificate (HSC)</h3><p>Notre Dame College, Mymensingh · Mymensingh Board · GPA 4.50</p></div>
+<div class="card rv" style="--c:var(--teal)"><div class="date">2021</div><h3>Secondary School Certificate (SSC)</h3><p>SVM Pilot Model Govt. High School · Dhaka Board · GPA 4.83</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="rv">Let's connect</h2>
+<p class="sub rv">I'm looking for internships and entry-level roles in AI, data analysis and digital fields. I'm also open to collaboration, community work and mentoring.</p>
+<div class="contact">
+<div class="card rv" style="--c:var(--wa)"><span class="ic">💬</span><h3>WhatsApp</h3><p><a href="https://wa.me/8801317323222" target="_blank" rel="noopener">+880 1317-323222</a></p></div>
+<div class="card rv" style="--c:var(--pink)"><span class="ic">📧</span><h3>Email</h3><p><a href="mailto:mdlimonhossen562p@gmail.com">mdlimonhossen562p@gmail.com</a></p></div>
+<div class="card rv" style="--c:var(--vio)"><span class="ic">👨‍💼</span><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/md-limon-hossen-565976379" target="_blank" rel="noopener">Connect with me</a></p></div>
+<div class="card rv" style="--c:var(--amber)"><span class="ic">📍</span><h3>Location</h3><p>Dhaka, Bangladesh</p></div>
+</div>
+</section>
+
+<footer>© 2026 Md. Limon Hossen. All rights reserved.</footer>
+<a class="wafab" href="https://wa.me/8801317323222" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+(function(){
+var words=['Mathematics Undergraduate','AI & No-Code Builder','Community Leader','Data Analytics Learner'],wi=0,ci=0,del=false,el=document.getElementById('typed');
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){el.textContent=words[0];}else{
+(function tick(){var w=words[wi];ci+=del?-1:1;el.textContent=w.slice(0,ci);
+var t=del?40:80;if(!del&&ci===w.length){del=true;t=1400}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;t=300}
+setTimeout(tick,t)})();}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var n=e.target;n.classList.add('on');
+n.querySelectorAll('.fill').forEach(function(f){f.style.width=f.dataset.w+'%'});
+var b=n.querySelector('b[data-n]');if(b)count(b);io.unobserve(n)})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+function count(b){var to=+b.dataset.n,s=b.dataset.s,st=null;function f(t){st=st||t;var p=Math.min((t-st)/1500,1);b.textContent=Math.round(to*p).toLocaleString()+(p===1?s:'');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var bar=document.getElementById('bar');addEventListener('scroll',function(){bar.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+var m=document.getElementById('menu'),l=document.getElementById('links');
+m.onclick=function(){l.classList.toggle('open')};
+function go(id){var t=id==='hero'?document.body:document.getElementById(id);if(!t)return;
+var y=id==='hero'?0:t.getBoundingClientRect().top+window.pageYOffset-70;
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+window.scrollTo({top:y,left:0,behavior:rm?'auto':'smooth'})}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){
+var id=a.getAttribute('href').slice(1);if(!id||!(id==='hero'||document.getElementById(id)))return;
+e.preventDefault();l.classList.remove('open');go(id);history.replaceState(null,'','#'+id)})});
+if(location.hash.length>1){setTimeout(function(){go(location.hash.slice(1))},300)}
+})();
+</script>
+</body>
+</html>
